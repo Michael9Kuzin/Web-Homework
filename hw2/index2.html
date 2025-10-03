@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Geuss The Number</title>
+</head>
+
+<body>
+  <!-- <h3>Enter the number</h3>
+  <input id="enter_num" type="number" placeholder="Enter the number (1 - 100)" />
+  <button onclick="guess_the_number()">Check number</button>
+  <h3 id="check_num"></h3> -->
+
+  <script>
+    const guess_num = Math.floor(Math.random() * 100) + 1;
+    let enter_num;
+
+    do {
+      enter_num = Number(prompt("Enter number (1 - 100):"));
+
+      if (enter_num > guess_num) {
+        alert(`The guess number is smoller then ${enter_num}`);
+
+      } else if (enter_num < guess_num) {
+        alert(`The Guess number is bigger then ${enter_num}`);
+
+      } else {
+        alert(`YOU ARE WIN!\nThe guess number is ${enter_num}`);
+      }
+
+    } while (enter_num !== guess_num);
+  </script>
+
+</body>
+
+</html>

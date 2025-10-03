@@ -1,0 +1,31 @@
+body {
+    margin: 100px;
+    display: flex;
+    font-family: 'Roboto', sans-serif;
+    justify-content: center; /* по горизонтали */
+    align-items: center; /* по вертикали */
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(4, 0.2fr);
+}
+
+.card {
+    width: 240px;
+    height: 260px;
+    padding: 20px 30px;
+    flex-direction: column;
+}
+
+.card img {
+    width: 100%;
+    height: 135px;
+    object-fit: cover;
+    display: block;
+}
+
+.card p {
+    font-size: 14px;
+    font-weight: bold;
+}
