@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>INTERVIEW — Projects</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            color: #fff;
+            background-color: #000;
+        }
+
+        header {
+            position: absolute;
+            top: 30px;
+            left: 40px;
+            width: calc(100% - 80px);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            z-index: 10;
+        }
+
+        header h1 {
+            font-size: 16px;
+            font-weight: 500;
+            letter-spacing: 1px;
+        }
+
+        .menu-icon {
+            width: 28px;
+            height: 18px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            cursor: pointer;
+        }
+
+        .menu-icon span {
+            display: block;
+            height: 2px;
+            background: #fff;
+            width: 100%;
+        }
+
+        .project-section {
+            position: relative;
+            width: 100%;
+            height: 100vh;
+            display: flex;
+            align-items: flex-end;
+            padding: 100px 120px;
+            background-size: cover;
+            background-position: center;
+        }
+
+        .overlay {
+            position: absolute;
+            inset: 0;
+            background: rgba(0, 0, 0, 0.0);
+        }
+
+        .project-info {
+            position: relative;
+            z-index: 2;
+            /* max-width: 600px; */
+        }
+
+        .project-info h2 {
+            font-size: 64px;
+            font-weight: 600;
+            margin-bottom: 25px;
+        }
+
+        .project-meta {
+            display: flex;
+            gap: 30px;
+            font-size: 14px;
+            line-height: 1.8;
+        }
+
+        .project-meta .number {
+            font-weight: 400;
+            padding-right: 200px;
+        }
+
+        .project-meta .description {
+            max-width: 550px;
+            opacity: 0.85;
+        }
+
+        .view-project {
+            position: absolute;
+            bottom: 100px;
+            right: 120px;
+            font-size: 14px;
+            font-weight: 500;
+            text-decoration: none;
+            color: #fff;
+        }
+
+        .view-project::after {
+            content: "→";
+            margin-left: 8px;
+        }
+
+        .project1 {
+            background-image: url('Homepage/img1.jpg');
+        }
+
+        .project2 {
+            background-image: url('Homepage/img2.jpg');
+        }
+
+        .project3 {
+            background-image: url('Homepage/img3.jpg');
+        }
+
+        .project4 {
+            background-image: url('Homepage/img4.jpg');
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>INTERVIEW</h1>
+        <div class="menu-icon">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </header>
+
+    <section class="project-section project1">
+        <div class="overlay"></div>
+        <div class="project-info">
+            <h2>Project Title</h2>
+            <div class="project-meta">
+                <div class="number">01<br>Reebok</div>
+                <div class="description">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+                    et dolore magna aliqua.
+                    Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                    consequat.
+                </div>
+            </div>
+        </div>
+        <a href="#" class="view-project">View Project</a>
+    </section>
+
+    <section class="project-section project2">
+        <div class="overlay"></div>
+        <div class="project-info">
+            <h2>Project Title</h2>
+            <div class="project-meta">
+                <div class="number">02<br>Unicef</div>
+                <div class="description">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+                    et dolore magna aliqua.
+                    Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                    consequat.
+                </div>
+            </div>
+        </div>
+        <a href="#" class="view-project">View Project</a>
+    </section>
+
+    <section class="project-section project3">
+        <div class="overlay"></div>
+        <div class="project-info">
+            <h2>Project Title</h2>
+            <div class="project-meta">
+                <div class="number">03<br>Les Miles</div>
+                <div class="description">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+                    et dolore magna aliqua.
+                    Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                    consequat.
+                </div>
+            </div>
+        </div>
+        <a href="#" class="view-project">View Project</a>
+    </section>
+
+    <section class="project-section project4">
+        <div class="overlay"></div>
+        <div class="project-info">
+            <h2>Project Title</h2>
+            <div class="project-meta">
+                <div class="number">04<br>Unicef</div>
+                <div class="description">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+                    et dolore magna aliqua.
+                    Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                    consequat.
+                </div>
+            </div>
+        </div>
+        <a href="#" class="view-project">View Project</a>
+    </section>
+
+</body>
+
+</html>
