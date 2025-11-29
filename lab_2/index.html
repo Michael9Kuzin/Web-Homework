@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Менеджер покупок</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1>Список позиций</h1>
+
+        <form id="item_form">
+            <input id="item_name" type="text" placeholder="Название позиции" required />
+            <input id="item_price" type="number" placeholder="Цена" required min="1" />
+            <input id="item_amount" type="number" placeholder="Количество" required min="1" />
+            <button type="submit">Добавить</button>
+        </form>
+
+        <h3>Позиции:</h3>
+        <div id="item_list"></div>
+
+        <p>Цена корзины: <span id="total_price">0</span> $</p>
+    </div>
+    <script src="js/script.js"></script>
+</body>
+
+</html>
